@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+    <title>lukehutscal.com</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="basscss.min.css">
+    <style type="text/css">
+    body {font: 1em/1.5 'Helvetica Neue', Arial, Helvetica, sans-serif;background:#ADD8E6;}
+    h1 {font-family: Futura, "Century Gothic", sans-serif;font-weight:bold;font-size:6em;line-height:90%}
+    .hidden {display:none;}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Luke Hutscal</h1>
+      <p class="px1">
+        <a href="mailto:luke@creaturecreative.com">luke@creaturecreative.com</a> / <a href="http://twitter.com/girasquid">@girasquid</a>
+      </p>
+      <hr>
+      <ul class="list-reset">
+         <li class="expandable" date="2015-10-31">
+          <a class="button button-narrow button-transparent">Spacefight</a>
+          <div class="hidden">
+            <a class="button button-narrow button-transparent" href="https://phaven-prod.s3.amazonaws.com/files/unknown_part/asset/1596980/_qSgyaofG4-YK2Yi9tlXtYkgahE/spacefight-win.zip">Windows</a> / <a class="button button-narrow button-transparent" href="https://phaven-prod.s3.amazonaws.com/files/unknown_part/asset/1596982/mymJxUV9SRXXYZQlg0FLf8Gh7yI/spacefight-osx.zip">OS X</a>
+          </div>
+        </li>
+
+        <li date="2012-09-24"><a href="http://beathound.com" class="button button-narrow button-transparent">Beathound</a></li>
+      </ul>
+    </div>
+    <script type="text/javascript">
+    function expand() {
+      this.parentNode.querySelector(".hidden").setAttribute("class", "");
+      this.remove();      
+    }
+
+    var expandables = document.querySelectorAll("li.expandable a:not(href)");
+    for(var i = 0; i < expandables.length; i++) {
+      expandables[i].onclick = expand;
+    }
+    </script>
+  </body>
+</html>
