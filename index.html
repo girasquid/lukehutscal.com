@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="basscss.min.css">
     <style type="text/css">
     body {font: 1em/1.5 'Helvetica Neue', Arial, Helvetica, sans-serif;background:#ADD8E6;}
-    h1 {font-family: Futura, "Century Gothic", sans-serif;font-weight:bold;font-size:6em;line-height:90%}
+    .h1, .h2, .h3, .h4, .h5, .h6 {font-family: Futura, "Century Gothic", sans-serif;}
+    h1 {font-weight:bold;font-size:6em;line-height:90%}
     .hidden {display:none;}
     </style>
   </head>
@@ -18,23 +19,29 @@
         <a href="mailto:luke@creaturecreative.com">luke@creaturecreative.com</a> / <a href="http://twitter.com/girasquid">@girasquid</a> / <a href="http://projects.lukehutscal.com">projects</a>
       </p>
       <hr>
-      <ul class="list-reset">
-        <li title="March 19, 2017"><a href="https://lukehut.itch.io/typestroid" class="button button-narrow button-transparent">TYPESTROID</a></li>
-        
-        <li title="December 27, 2016"><a href="https://lukehut.itch.io/vinnys-snack-shack" class="button button-narrow button-transparent">Vinny's Snack Shack</a></li>
-        
-        <li title="August 3, 2016"><a href="http://monthofthemonth.club" class="button button-narrow button-transparent">monthofthemonth.club</a></li>
+      <div class="col col-7">
+        <ul class="list-reset">
+          <li title="March 19, 2017"><a href="https://lukehut.itch.io/typestroid" class="button button-narrow button-transparent">TYPESTROID</a></li>
 
-        <li title="June 21, 2016"><a href="http://languageorstartup.com" class="button button-narrow button-transparent">Language, or tech startup?</a></li>
+          <li title="December 27, 2016"><a href="https://lukehut.itch.io/vinnys-snack-shack" class="button button-narrow button-transparent">Vinny's Snack Shack</a></li>
 
-        <li title="April 16, 2016"><a href="https://lukehut.itch.io/shuttle-hop" class="button button-narrow button-transparent">Shuttle Hop</a></li>
+          <li title="August 3, 2016"><a href="http://monthofthemonth.club" class="button button-narrow button-transparent">monthofthemonth.club</a></li>
 
-        <li title="April 12, 2016"><a href="https://lukehut.itch.io/perfidia-pass" class="button button-narrow button-transparent">Perfidia Pass</a></li>
+          <li title="June 21, 2016"><a href="http://languageorstartup.com" class="button button-narrow button-transparent">Language, or tech startup?</a></li>
 
-        <li title="November 17, 2015"><a href="https://lukehut.itch.io/spacefight" class="button button-narrow button-transparent">Spacefight</a></li>
+          <li title="April 16, 2016"><a href="https://lukehut.itch.io/shuttle-hop" class="button button-narrow button-transparent">Shuttle Hop</a></li>
 
-        <li title="September 24, 2012"><a href="https://beathound.com" class="button button-narrow button-transparent">Beathound</a></li>
-      </ul>
+          <li title="April 12, 2016"><a href="https://lukehut.itch.io/perfidia-pass" class="button button-narrow button-transparent">Perfidia Pass</a></li>
+
+          <li title="November 17, 2015"><a href="https://lukehut.itch.io/spacefight" class="button button-narrow button-transparent">Spacefight</a></li>
+
+          <li title="September 24, 2012"><a href="https://beathound.com" class="button button-narrow button-transparent">Beathound</a></li>
+        </ul>
+      </div>
+      <div class="col col-5">
+        <p class="h4"><label for='tlemail'>Sign up for email updates when I release something new:</label></p>
+         <form action="https://tinyletter.com/lukehutscal" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/lukehutscal', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><input type="text" style="width:150px" name="email" id="tlemail" placeholder="luke@tattooine.ca" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" /><span class="h6 px1"><a href="https://tinyletter.com" target="_blank">(powered by TinyLetter)</a></span></form>
+       </div>
     </div>
   </body>
 </html>
